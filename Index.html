@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SheCodes homepage</title>
     <style>
+        body {
+            background: rgb(243, 228, 243);
+        }
+
         h1 {
-            color: red;
+            color: rgb(166, 80, 247);
             font-size: 38px;
             text-align: center;
             text-decoration: underline;
         }
         h2 {
-            color: green;
+            color: rgb(19, 1, 19);
             text-align: center;
-            font-size: 30px;  
+            font-size: 30px;
+            font-weight: normal;  
         }
-    </style>
-    <style>
+    
         .premium {
             color: blue;
+            cursor: pointer;
         }
 
         .free {
@@ -29,7 +34,68 @@
         .story {
             color: green;
         }
+
+        p {
+            text-align: center;
+          }
+        img {
+            display: block;
+            margin: 0 auto;
+        }
         
+        button {
+            display:block;
+            margin: 0 auto 30px auto;
+            padding: 15px 30px 15px 30px;
+            font-size: 18px;
+            color:  rgb(166, 80, 247);
+            background-color: transparent;
+            border:  1px  solid grey;
+            border-radius: 50px;
+            box-shadow: 5px 5px 10px rgba(o,0,0,0,0.3);
+        }
+        button:hover {
+            background: rgb(166, 80, 247);
+            color: white;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            word-spacing: 30px;
+        }
+
+        li {
+            text-align: center;
+            display: inline-block;
+        }
+ 
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        .message {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 10px;
+            font-size: 12px;
+            word-spacing: 40px;
+            margin: 40px;  
+        }
+
+        .contact-platform {
+            color: rgb(166, 80, 247);
+        }
+        .info-heading {
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 40px;
+        }
     </style>
 </head>
 <body>
@@ -39,6 +105,10 @@
     <h2>
         Coding Workshop For Women
     </h2>
+        <button>
+            Apply now
+        </button>
+
     <ul>
         <li class="premium">
             <a href="https://Coders.io"
@@ -67,9 +137,16 @@
         <br />
         <hr />
     </ul>
-    <h3>
+
+    <div class="info-heading">
         More Info
-    </h3>
+    </div>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAMyrCbbL1eP2GzL9WGY5GRNCslU4t-2w-mQ&s"/>
+    <div class="message">
+        <span class="contact-platform">Email:</span>
+        hello@SheCodes.io
+        <span class="contact-platform">instagram:</span>
+        @SheCodes.io     
+    </div>
 </body>
 </html>
